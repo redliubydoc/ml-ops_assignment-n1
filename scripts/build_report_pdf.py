@@ -385,6 +385,35 @@ def build() -> None:
         ),
     ])
 
+    page("14", "Appendix D. Submission Links and Deliverables", [
+        paragraph(
+            "<b>GitHub repository:</b> "
+            "https://github.com/redliubydoc/ml-ops_assignment-n1",
+            body,
+        ),
+        paragraph(
+            "<b>GitHub Actions:</b> "
+            "https://github.com/redliubydoc/ml-ops_assignment-n1/actions",
+            body,
+        ),
+        paragraph(
+            "<b>Included deliverables:</b> source code, Dockerfile, "
+            "requirements.txt, cleaned dataset, download script, EDA and "
+            "training scripts, FastAPI inference service, unit tests, CI "
+            "workflow, Kubernetes and monitoring manifests, screenshots, and "
+            "this written report.",
+            body,
+        ),
+        paragraph(
+            "<b>Local access:</b> API documentation is available at "
+            "http://localhost:8000/docs and MLflow is available at "
+            "http://localhost:5000 after following docs/SETUP.md. No public "
+            "API URL is claimed. The short pipeline video is submitted as a "
+            "separate attachment.",
+            body,
+        ),
+    ])
+
     doc.build(story)
     print(f"Created {OUTPUT}")
 

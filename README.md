@@ -71,4 +71,14 @@ in `k8s/deployment.yaml` and set `imagePullPolicy: Always`.
 * `report.md` is the submission report template with reproducibility evidence.
 * `docs/` contains architecture, setup, API, and evidence documentation.
 * `screenshots/` contains the recommended final-submission evidence layout.
-* `report.pdf` is the generated 10-page written report.
+* `report.pdf` is the generated written report with an evidence appendix.
+
+## Submission links
+
+* GitHub repository: https://github.com/redliubydoc/ml-ops_assignment-n1
+* GitHub Actions workflow: https://github.com/redliubydoc/ml-ops_assignment-n1/actions
+* Local API documentation: http://localhost:8000/docs
+* Local MLflow UI: http://localhost:5000
+
+The API is configured for local testing; no public deployment URL is claimed.
+Submit the short pipeline video separately with the repository and report.

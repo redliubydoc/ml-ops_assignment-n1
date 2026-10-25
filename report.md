@@ -146,3 +146,23 @@ The final PDF includes six genuine screenshots from this workspace: EDA
 histograms, class balance, correlation heatmap, MLflow, GitHub Actions, and
 the Docker-served Swagger UI. No placeholder images are included. The exact
 commands and a short video outline are in `docs/EVIDENCE_CHECKLIST.md`.
+
+## 13. Submission links and deliverables
+
+* GitHub repository: https://github.com/redliubydoc/ml-ops_assignment-n1
+* GitHub Actions: https://github.com/redliubydoc/ml-ops_assignment-n1/actions
+* Final report: `report.pdf`
+* Source report: `report.md`
+* Dataset and download script: `data/heart_disease.csv` and
+  `scripts/download_data.py`
+* EDA and training scripts: `scripts/eda.py` and `scripts/train.py`
+* API source and example request: `src/` and `examples/predict.json`
+* Tests: `tests/`
+* Container and deployment files: `Dockerfile` and `k8s/`
+* CI workflow: `.github/workflows/ci.yml`
+* Evidence screenshots: `screenshots/`
+* Local API documentation: `http://localhost:8000/docs`
+* Local MLflow UI: `http://localhost:5000`
+
+The service is intended for local testing and does not have a public API URL.
+The short pipeline video is a separate submission attachment.

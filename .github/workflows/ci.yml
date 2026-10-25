@@ -1,0 +1,22 @@
+name: MLOps CI
+on:
+  push:
+  pull_request:
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt ruff
+      - run: ruff check src scripts tests
+      - run: python scripts/download_data.py
+      - run: pytest -q
+      - run: python -m scripts.eda
+      - run: python -m scripts.train --experiment ci
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ml-artifacts
+          path: artifacts/

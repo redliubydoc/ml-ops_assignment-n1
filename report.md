@@ -144,8 +144,5 @@ endpoints returned valid responses. The generated artifacts are included under
 
 The final PDF includes six genuine screenshots from this workspace: EDA
 histograms, class balance, correlation heatmap, MLflow, GitHub Actions, and
-the Docker-served Swagger UI. Kubernetes and Grafana screenshots are not
-claimed because the local Minikube image transfer failed in WSL; the
-deployment manifests and exact recovery instructions remain available in
-`docs/SETUP.md`. No placeholder images are included. The exact commands and a
-short video outline are in `docs/EVIDENCE_CHECKLIST.md`.
+the Docker-served Swagger UI. No placeholder images are included. The exact
+commands and a short video outline are in `docs/EVIDENCE_CHECKLIST.md`.

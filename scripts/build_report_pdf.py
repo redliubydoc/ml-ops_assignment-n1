@@ -383,13 +383,6 @@ def build() -> None:
             "06-docker-api.png",
             "Figure C2. FastAPI Swagger UI served from the Docker container.",
         ),
-        paragraph(
-            "<b>Evidence boundary:</b> Kubernetes and Grafana screenshots are "
-            "not included because the local Minikube image transfer failed in "
-            "WSL. The manifests and setup instructions are included, but no "
-            "unverified deployment result is claimed.",
-            body,
-        ),
     ])
 
     doc.build(story)

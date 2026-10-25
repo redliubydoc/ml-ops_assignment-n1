@@ -89,7 +89,6 @@ def build() -> None:
             body,
         ),
         Spacer(1, 2.2 * inch),
-        paragraph("Prepared for academic submission", body),
         PageBreak(),
     ])
 
